@@ -21,10 +21,15 @@ echo "[ZanX] Cleaning previous live-build state..."
 lb clean --all || true
 
 echo "[ZanX] Configuring Debian 13/Trixie amd64 live image..."
+
 lb config \
   --distribution trixie \
   --architectures amd64 \
   --archive-areas "main contrib non-free-firmware" \
+  --mirror-bootstrap "https://deb.debian.org/debian" \
+  --mirror-chroot "https://deb.debian.org/debian" \
+  --mirror-binary "https://deb.debian.org/debian" \
+  --mirror-binary-security "https://security.debian.org/debian-security" \
   --binary-images iso-hybrid \
   --bootappend-live "boot=live components quiet splash username=zanx hostname=zanx" \
   --debian-installer live \
@@ -39,6 +44,7 @@ echo "[ZanX] Building ISO..."
 lb build
 
 ISO="$(find . -maxdepth 1 -type f -name '*.iso' -print -quit)"
+
 if [[ -z "${ISO}" ]]; then
   echo "Build finished but no ISO was found." >&2
   exit 1
@@ -46,6 +52,7 @@ fi
 
 STAMP="$(date +%Y%m%d-%H%M)"
 OUT="dist/ZanX-OS-${STAMP}-amd64.iso"
+
 cp -f "$ISO" "$OUT"
 
 echo "[ZanX] ISO ready: $OUT"
