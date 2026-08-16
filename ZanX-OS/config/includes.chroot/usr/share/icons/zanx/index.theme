@@ -1,0 +1,5 @@
+[Icon Theme]
+Name=ZanX
+Comment=ZanX classic pixel icons
+Inherits=hicolor
+Directories=.

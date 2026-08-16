@@ -1,0 +1,73 @@
+# ZanX OS classic 2000s panel
+panel_items = LTSBC
+panel_position = bottom center horizontal
+panel_size = 100% 28
+panel_margin = 0 0
+panel_padding = 2 2 2
+panel_background_id = 1
+wm_menu = 1
+wm_menu_bind_mouse = 3
+wm_menu_app = 1
+wm_menu_key = F1
+panel_autohide = 0
+panel_layer = top
+panel_monitor = all
+
+taskbar_mode = multi_desktop
+taskbar_padding = 2 2 2
+taskbar_background_id = 2
+taskbar_active_background_id = 3
+task_icon = 1
+task_text = 1
+task_centered = 0
+task_maximum_size = 220 24
+task_padding = 3 2 3
+task_tooltip = 1
+task_iconified = 1
+task_active = 1
+task_urgent = 1
+task_font = DejaVu Sans 9
+task_font_color = #c0c0c0 100
+task_active_font_color = #ffffff 100
+task_urgent_font_color = #ffffff 100
+task_iconified_font_color = #808080 100
+
+launcher_padding = 2 2 2
+launcher_background_id = 2
+launcher_icon_size = 20
+launcher_icon_theme = ZanX
+launcher_icon_asb = 100 0 0
+launcher_item_app = /usr/share/applications/zanx-explorer.desktop
+launcher_item_app = /usr/share/applications/zanx-notepad.desktop
+launcher_item_app = /usr/share/applications/zanx-winrar.desktop
+launcher_item_app = /usr/share/applications/firefox-zanx.desktop
+launcher_item_app = /usr/share/applications/zanx-system-info.desktop
+
+systray_padding = 2 2 2
+systray_background_id = 2
+systray_sort = ascending
+
+clock_font = DejaVu Sans Mono 9
+clock_padding = 4 2
+clock_background_id = 2
+clock_tooltip = %A %x
+clock_rclick_command = xterm -e date
+
+rounded = 0
+border_width = 1
+
+# Main panel
+background_color = #161616 100
+border_color = #5a1018 100
+
+# Background 2: inactive
+rounded = 0
+border_width = 1
+background_color = #242424 100
+border_color = #3a3a3a 100
+
+# Background 3: active
+rounded = 0
+border_width = 1
+background_color = #5a1018 100
+border_color = #9b1018 100

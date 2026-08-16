@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Network Manager Applet
+Comment=Classic network tray applet
+Exec=nm-applet
+OnlyShowIn=Openbox;
+X-GNOME-Autostart-enabled=true

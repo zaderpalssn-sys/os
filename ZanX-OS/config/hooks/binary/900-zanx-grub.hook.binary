@@ -1,0 +1,17 @@
+#!/bin/sh
+set -eu
+
+THEME_SRC="config/includes.binary/boot/grub/themes/zanx"
+THEME_DST="binary/boot/grub/themes/zanx"
+
+if [ -f "binary/boot/grub/grub.cfg" ]; then
+  mkdir -p "$THEME_DST"
+  cp -f "$THEME_SRC/theme.txt" "$THEME_DST/theme.txt"
+  cp -f "$THEME_SRC/background.png" "$THEME_DST/background.png"
+
+  if ! grep -q 'themes/zanx/theme.txt' binary/boot/grub/grub.cfg; then
+    sed -i '1iset theme=($root)/boot/grub/themes/zanx/theme.txt' binary/boot/grub/grub.cfg
+  fi
+fi
+
+echo "ZanX GRUB theme staged."

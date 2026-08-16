@@ -1,0 +1,3 @@
+#!/bin/sh
+# User-facing WinRAR alias. Uses File Roller as the graphical archive manager.
+exec file-roller "$@"

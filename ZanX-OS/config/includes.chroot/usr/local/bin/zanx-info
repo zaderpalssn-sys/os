@@ -1,0 +1,16 @@
+#!/bin/sh
+clear
+cat <<'EOF'
+█████████   ███████   ██   ██   ██   ██        ██    ██   ██   ███  ██    ██ ██      ██      ██   ██   ████ ██     ███    ██        ███████   ██ ████     ███  ██          ██   ██   ██  ███    ██ ██  ██          ██   ██   ██   ██   ██   ██  █████████   ██   ██   ██   ██   ██   ██
+
+ZanX OS 0.1
+Retro Linux / Debian 13 base
+Desktop: Openbox + Tint2
+Style: 2000-2005 inspired
+Apps: Firefox / Explorer / Notepad / WinRAR
+
+EOF
+uname -a
+echo
+echo "Press Enter to close."
+read _

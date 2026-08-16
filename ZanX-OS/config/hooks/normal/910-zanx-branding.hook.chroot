@@ -1,0 +1,17 @@
+#!/bin/sh
+set -eu
+
+# Debian live-build may not include a live user's home at build time.
+# The files below are copied into /etc/skel and are used by live-config
+# when the live username is created at boot.
+mkdir -p /etc/skel/.config/openbox /etc/skel/.config/tint2
+cp -f /etc/xdg/openbox/rc.xml /etc/skel/.config/openbox/rc.xml
+cp -f /etc/xdg/openbox/menu.xml /etc/skel/.config/openbox/menu.xml
+cp -f /etc/xdg/tint2/tint2rc /etc/skel/.config/tint2/tint2rc
+
+mkdir -p /etc/skel/Desktop
+cp -f /usr/share/applications/zanx-explorer.desktop /etc/skel/Desktop/Explorer.desktop
+cp -f /usr/share/applications/zanx-notepad.desktop /etc/skel/Desktop/Notepad.desktop
+cp -f /usr/share/applications/zanx-winrar.desktop /etc/skel/Desktop/WinRAR.desktop
+cp -f /usr/share/applications/firefox-zanx.desktop /etc/skel/Desktop/Firefox.desktop
+cp -f /usr/share/applications/zanx-system-info.desktop /etc/skel/Desktop/ZanX-System-Info.desktop

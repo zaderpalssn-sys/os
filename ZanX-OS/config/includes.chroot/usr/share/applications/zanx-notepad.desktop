@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Notepad
+Comment=ZanX text editor
+Exec=mousepad %U
+Icon=zanx-notepad
+Terminal=false
+Categories=Utility;TextEditor;

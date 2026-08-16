@@ -1,0 +1,7 @@
+PRETTY_NAME="ZanX OS 0.1"
+NAME="ZanX OS"
+VERSION_ID="0.1"
+VERSION="0.1 (Retro Linux)"
+VERSION_CODENAME=zanx
+ID=zanx
+ID_LIKE=debian

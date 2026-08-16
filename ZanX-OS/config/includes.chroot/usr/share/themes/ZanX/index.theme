@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=ZanX
+Comment=Retro 2000s black and red theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=ZanX
+MetacityTheme=ZanX
+IconTheme=ZanX

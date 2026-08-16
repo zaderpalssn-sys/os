@@ -1,0 +1,30 @@
+! ZanX Openbox theme - deliberately square and early-2000s
+window.active.title.bg: Solid #5a1018
+window.active.title.bg.color: #5a1018
+window.active.label.text.color: #ffffff
+window.active.button.unpressed.bg: Solid #242424
+window.active.button.unpressed.image.color: #d0d0d0
+window.active.button.hover.bg: Solid #9b1018
+window.active.button.hover.image.color: #ffffff
+window.active.button.pressed.bg: Solid #3a3a3a
+window.active.button.pressed.image.color: #ffffff
+
+window.inactive.title.bg: Solid #242424
+window.inactive.label.text.color: #b0b0b0
+window.inactive.button.unpressed.bg: Solid #202020
+window.inactive.button.unpressed.image.color: #888888
+window.inactive.button.hover.bg: Solid #5a1018
+window.inactive.button.hover.image.color: #ffffff
+window.inactive.button.pressed.bg: Solid #303030
+window.inactive.button.pressed.image.color: #c0c0c0
+
+menu.border.color: #6a6a6a
+menu.border.width: 1
+menu.title.bg: Solid #5a1018
+menu.title.text.color: #ffffff
+menu.items.bg: Solid #202020
+menu.items.text.color: #d0d0d0
+menu.items.active.bg: Solid #5a1018
+menu.items.active.text.color: #ffffff
+osd.bg: Solid #101010
+osd.label.text.color: #ffffff

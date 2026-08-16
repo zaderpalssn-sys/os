@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=WinRAR
+Comment=ZanX archive manager
+Exec=file-roller %U
+Icon=zanx-archive
+Terminal=false
+Categories=Utility;Archiving;

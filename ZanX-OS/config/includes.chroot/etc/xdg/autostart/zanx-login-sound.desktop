@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=ZanX Login Sound
+Comment=Retro ZanX startup sound
+Exec=/usr/local/bin/zanx-login-sound
+OnlyShowIn=Openbox;
+X-GNOME-Autostart-enabled=true

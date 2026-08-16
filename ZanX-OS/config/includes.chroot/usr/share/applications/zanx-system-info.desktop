@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=ZanX System Information
+Comment=Show ZanX system information
+Exec=xterm -e zanx-info
+Icon=computer
+Terminal=false
+Categories=System;Utility;

@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=ZanX Openbox
+Comment=Classic ZanX retro desktop
+Exec=openbox-session
+TryExec=openbox-session
+Type=Application

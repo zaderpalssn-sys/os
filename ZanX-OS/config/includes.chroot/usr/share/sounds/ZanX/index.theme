@@ -1,0 +1,7 @@
+[Sound Theme]
+Name=ZanX
+Comment=ZanX retro system sounds
+Directories=stereo
+
+[stereo/desktop-login]
+Name=ZanX login

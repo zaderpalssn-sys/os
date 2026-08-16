@@ -1,0 +1,78 @@
+/*
+ * ZanX GTK3 compatibility skin.
+ * Deliberately square, dark and low-tech.
+ */
+* {
+  -GtkWidget-focus-padding: 0;
+  -GtkWidget-focus-line-width: 1;
+  -GtkButton-default-border-radius: 0;
+  -GtkButton-border-radius: 0;
+  -GtkMenuItem-border-radius: 0;
+  -GtkEntry-border-radius: 0;
+  -GtkToolbar-border-radius: 0;
+}
+
+window,
+dialog,
+.background {
+  background-color: #181818;
+  color: #d0d0d0;
+}
+
+button {
+  background-image: none;
+  background-color: #303030;
+  border: 1px solid #606060;
+  border-radius: 0;
+  color: #d0d0d0;
+  padding: 3px 8px;
+}
+
+button:hover,
+button:checked {
+  background-color: #5a1018;
+  border-color: #9b1018;
+}
+
+entry,
+textview,
+treeview,
+combobox,
+spinbutton {
+  background-color: #101010;
+  color: #d0d0d0;
+  border-radius: 0;
+}
+
+headerbar,
+.titlebar,
+toolbar,
+menubar {
+  background-image: none;
+  background-color: #242424;
+  border-bottom: 1px solid #6a1118;
+  box-shadow: none;
+}
+
+menu,
+menuitem {
+  background-color: #202020;
+  color: #d0d0d0;
+  border-radius: 0;
+}
+
+menuitem:hover {
+  background-color: #5a1018;
+}
+
+scrollbar slider {
+  background-color: #5a5a5a;
+  border-radius: 0;
+}
+
+tooltip {
+  background-color: #0a0a0a;
+  color: #eeeeee;
+  border: 1px solid #8a1118;
+  border-radius: 0;
+}

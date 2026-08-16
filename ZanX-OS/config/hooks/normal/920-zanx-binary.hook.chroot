@@ -1,0 +1,9 @@
+#!/bin/sh
+set -eu
+
+# Make sure generated live images have a predictable GRUB theme path.
+if [ -d /usr/lib/live/build/bootloaders/grub-pc ]; then
+  :
+fi
+
+echo "ZanX binary boot artwork staged."

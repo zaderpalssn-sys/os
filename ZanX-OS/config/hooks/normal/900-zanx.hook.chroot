@@ -1,0 +1,38 @@
+#!/bin/sh
+set -eu
+
+# Ensure ZanX helper scripts are executable.
+chmod +x /usr/local/bin/zanx-info
+chmod +x /usr/local/bin/zanx-winrar
+chmod +x /usr/local/bin/zanx-explorer
+chmod +x /usr/local/bin/zanx-notepad
+chmod +x /usr/local/bin/zanx-startup
+chmod +x /usr/local/bin/zanx-login-sound
+
+# Install the classic desktop default if package defaults differ.
+mkdir -p /etc/xdg/openbox /etc/xdg/tint2
+
+# Create a simple top-level menu cache if desktop-file-utils is present.
+if command -v update-desktop-database >/dev/null 2>&1; then
+  update-desktop-database /usr/share/applications || true
+fi
+
+# Make sure the ZanX icon theme is discoverable.
+if command -v gtk-update-icon-cache >/dev/null 2>&1; then
+  gtk-update-icon-cache -f -t /usr/share/icons/zanx || true
+fi
+
+# Set a sane default terminal for the retro desktop.
+mkdir -p /etc/xdg
+cat > /etc/xdg/user-dirs.defaults <<'EOF'
+DESKTOP=Desktop
+DOWNLOAD=Downloads
+TEMPLATES=Templates
+PUBLICSHARE=Public
+DOCUMENTS=Documents
+MUSIC=Music
+PICTURES=Pictures
+VIDEOS=Videos
+EOF
+
+echo "ZanX OS customization complete."

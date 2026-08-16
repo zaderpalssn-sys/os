@@ -1,0 +1,26 @@
+# ZanX OS GRUB theme
+desktop-image: "background.png"
+
++ boot_menu {
+  left = 12%
+  top = 58%
+  width = 76%
+  height = 30%
+  item_font = "DejaVu Sans Mono 16"
+  item_color = "#b0b0b0"
+  selected_item_color = "#ffffff"
+  item_height = 32
+  item_padding = 6
+  item_icon_space = 12
+  selected_item_pixmap_style = "highlight"
+}
+
++ label {
+  top = 91%
+  left = 4%
+  width = 92%
+  height = 24
+  text = "ZanX OS 0.1  |  Retro Linux  |  2000-2005 inspired"
+  color = "#9b1018"
+  font = "DejaVu Sans Mono 12"
+}

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Explorer
+Comment=ZanX file manager
+Exec=pcmanfm %U
+Icon=zanx-folder
+Terminal=false
+Categories=Utility;FileManager;

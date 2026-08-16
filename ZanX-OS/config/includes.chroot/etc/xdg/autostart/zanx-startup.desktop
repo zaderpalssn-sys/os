@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=ZanX Startup
+Comment=Start the ZanX classic desktop
+Exec=/usr/local/bin/zanx-startup
+OnlyShowIn=Openbox;
+X-GNOME-Autostart-enabled=true

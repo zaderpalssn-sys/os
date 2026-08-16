@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Firefox
+Comment=Firefox ESR
+Exec=firefox-esr %u
+Icon=firefox-esr
+Terminal=false
+Categories=Network;WebBrowser;

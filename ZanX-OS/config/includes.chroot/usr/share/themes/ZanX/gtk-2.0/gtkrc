@@ -1,0 +1,20 @@
+style "zanx-default"
+{
+  GtkWidget::focus-line-width = 1
+  GtkWidget::focus-padding = 0
+  GtkButton::default_border = {0,0,0,0}
+  GtkButton::default_outside_border = {0,0,0,0}
+  GtkButton::inner-border = {3,3,3,3}
+  GtkRange::trough_border = 1
+  GtkWidget::link-color = "#9b1018"
+  GtkWidget::visited-link-color = "#6b0a10"
+  text[NORMAL] = "#d0d0d0"
+  base[NORMAL] = "#101010"
+  bg[NORMAL] = "#242424"
+  fg[NORMAL] = "#d0d0d0"
+  text[SELECTED] = "#ffffff"
+  base[SELECTED] = "#5a1018"
+  bg[PRELIGHT] = "#5a1018"
+  fg[PRELIGHT] = "#ffffff"
+}
+class "GtkWidget" style "zanx-default"

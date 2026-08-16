@@ -1,0 +1,54 @@
+# Core desktop
+openbox
+tint2
+pcmanfm
+mousepad
+xterm
+lightdm
+lightdm-gtk-greeter
+
+# Browser and archives
+firefox-esr
+file-roller
+7zip
+unzip
+zip
+
+# Desktop integration / look
+lxappearance
+gtk2-engines-pixbuf
+fonts-dejavu
+hicolor-icon-theme
+desktop-file-utils
+
+# Networking
+network-manager
+network-manager-gnome
+
+# Utilities
+sudo
+curl
+wget
+htop
+nano
+less
+procps
+pciutils
+usbutils
+lshw
+x11-xserver-utils
+polkitd
+dbus-x11
+
+# Sound / basic media support
+libcanberra-pulse
+libcanberra-gtk3-module
+alsa-utils
+pulseaudio
+pavucontrol
+
+# Login / graphical basics
+xserver-xorg
+xinit
+xauth
+xterm

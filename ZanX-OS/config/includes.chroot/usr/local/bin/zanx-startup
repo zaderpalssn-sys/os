@@ -1,0 +1,7 @@
+#!/bin/sh
+set -u
+xsetroot -solid '#090909' 2>/dev/null || true
+pcmanfm --desktop >/dev/null 2>&1 &
+sleep 1
+pcmanfm --set-wallpaper=/usr/share/backgrounds/zanx/desktop-wallpaper.png --wallpaper-mode=stretch >/dev/null 2>&1 || true
+tint2 -c /etc/xdg/tint2/tint2rc >/dev/null 2>&1 &
